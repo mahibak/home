@@ -25,7 +25,7 @@ setxkbmap us -variant colemak
 
 export PATH="/home/$USER/VSCode-linux-x64:$PATH"
 export PATH="/home/$USER/Ac6/SystemWorkbench:$PATH"
-export PATH="/home/$USER/clion-2018.1.6/bin:$PATH"
+export PATH="/usr/local/clion-2018.1.6/bin:$PATH"
 
 export EDITOR=code
 xrandr --output DP-1 --mode 3840x2160 --pos 1920x0 --output DVI-I-1 --pos 0x800
