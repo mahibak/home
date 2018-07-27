@@ -318,6 +318,7 @@ clientkeys = awful.util.table.join(
     -- Rules to apply to new clients (through the "manage" signal).
     awful.rules.rules = {
         -- All clients will match this rule.
+        { rule = { class = "chrome" }, properties = { maximized = false } },
         { rule = { },
           properties = { border_width = beautiful.border_width,
                          border_color = beautiful.border_normal,
@@ -326,7 +327,8 @@ clientkeys = awful.util.table.join(
                          keys = clientkeys,
                          buttons = clientbuttons,
                          screen = awful.screen.preferred,
-                         placement = awful.placement.no_overlap+awful.placement.no_offscreen
+                         placement = awful.placement.no_overlap+awful.placement.no_offscreen,
+                         maximized = false
          }
         },
     
